@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "noalgo",
-	"version": "1.0",
+	"version": "1.1",
 
 	"description": "removes all recommendation features from select social media sites (reddit and yt)",
 
@@ -11,11 +11,11 @@
 
 	"content_scripts": [
 		{
-			"matches": ["https://*.youtube.com/*", "https://youtube.com/*"],
+			"matches": ["https://*.youtube.com/*"],
 			"js": ["sites/yt.js"]
 		},
 		{
-			"matches": ["https://*.reddit.com/*", "https://reddit.com/*"],
+			"matches": ["https://*.reddit.com/*"],
 			"js": ["sites/reddit.js"]		
 		}
 	]
