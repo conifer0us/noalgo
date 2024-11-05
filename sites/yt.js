@@ -5,7 +5,7 @@ if (idMatch) {
     window.location.replace(`https://youtube.com/embed/${vID}?rel=0`);
 } else {
     if (!window.location.href.match(/^.*youtube\.com\/embed\/.*$/)) {
-        history.back();
+        window.location.href = "https://en.wikipedia.org/wiki/Special:Random";
     }
     else {
         let hideRecCSS = document.createElement("style");

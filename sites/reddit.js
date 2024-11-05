@@ -1,3 +1,3 @@
 if (window.location.href === "https://www.reddit.com/") {
-    history.back();
+    window.location.href = "https://en.wikipedia.org/wiki/Special:Random";
 }
